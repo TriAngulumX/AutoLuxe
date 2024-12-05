@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - BMW I8</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </div>
+
+    <section class="hero" id="hero">
+      <img src="Asset/img3.jpg" width="100%" height="100%" />
+
+      <div class="content">
+        <h4>BMW</h4>
+        <h3>i8 COUPE</h3>
+        <a href="#explan" id="button1" class="cta"><span>></span></a>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <div class="header-body">
+        <div>
+          <h1>DESTINATION: FUTURE</h1>
+
+          <p>
+            BMW i8 Coupe is a masterpiece of innovation from BMW that combines
+            futuristic design with advanced performance and high efficiency.
+            This plug-in hybrid sports car offers the perfect blend of
+            eco-friendly technology and impressive power, powered by a 1.5-liter
+            TwinPower Turbo petrol engine that works in harmony with a
+            high-powered electric motor. With its aerodynamic design and iconic
+            gullwing doors, the BMW i8 Coupe not only provides a dynamic driving
+            experience, but also represents a modern and exclusive lifestyle.
+          </p>
+          <hr />
+        </div>
+      </div>
+      <img src="Asset/img2.jpg" width="70%" height="70%" />
+    </section>
+
+    <section class="exterior" id="exterior">
+      <h1>EXTERIOR</h1>
+      <div class="panels">
+        <div class="panel-sm">
+          <div>
+            <p>
+              The exterior of the BMW i8 Coupe features a futuristic and
+              aerodynamic design, reflecting the modern innovations of BMW. The
+              adaptive LED headlights and BMW signature grille add to the
+              aggressive feel, while the use of lightweight materials such as
+              carbon fiber reinforces the sense of efficiency and high
+              performance.
+            </p>
+          </div>
+        </div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel-lg"></div>
+      </div>
+    </section>
+
+    <section class="feature3d" id="feature3d">
+      <div class="content">
+        <h1>Discover Exterior 3D View</h1>
+        <button class="view-button" onclick="openGifModal()">></button>
+      </div>
+    </section>
+
+    <section class="interior" id="interior">
+      <h1>INTERIOR</h1>
+      <img src="Asset/img9.jpg" width="100%" height="50%" />
+    </section>
+
+    <div id="gifModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeGifModal()">&times;</span>
+        <img src="Asset/bmwi8coupe.gif" alt="Huracan 3D View" width="100%" />
+      </div>
+    </div>
+
+    <section class="spec" id="spec">
+      <a href="specification/spec.html" class="cta"
+        >SEE ALL TECHNICAL SPECIFICATION</a
+      >
+    </section>
+    <section class="price" id="price">
+      <img src="Asset/img4.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP.4,56 M</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Car</label>
+          <input
+            type="text"
+            id="car"
+            name="car"
+            value="BMW I8-Coupe"
+            readonly
+            required
+          />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="pictures" id="pictures">
+      <div class="content">
+        <img src="Asset/img8.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="Asset/img7.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="Asset/img11.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="Asset/img5.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="Asset/img1.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="Asset/img4.jpg" width="100%" height="100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
