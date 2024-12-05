@@ -1,0 +1,954 @@
+:root {
+  --color1: white;
+  --color2: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: white;
+  min-height: 3000px;
+}
+
+.navbar {
+  font-family: "Orbitron";
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*sejajar*/
+  padding: 1.2rem 3%;
+  background-color: rgb(0, 0, 0);
+  /*border-bottom: 1px solid rgb(0, 0, 0);*/
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: "Orbitron";
+  background-clip: none;
+  background-position: 0;
+  background: linear-gradient(
+    to right,
+    #a3a3a3 0,
+    rgb(255, 255, 255) 10%,
+    #565656 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear forwards;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+#menu {
+  display: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .content h4 {
+  margin-right: 4%;
+  margin-left: 4%;
+  max-width: calc(65rem + 2rem);
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: 300;
+  margin-top: -10rem;
+  text-shadow: 0 1px 1px black;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 1s ease;
+}
+
+.hero .content .h4--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero .content h3 {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  color: rgb(223, 223, 223);
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: 1.7s ease;
+  text-shadow: 0 1px 3px black;
+  opacity: 0;
+  transform: translateX(-8px);
+}
+
+.hero .content .h3--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .content .cta {
+  left: 44%;
+  position: absolute;
+  box-shadow: 0 1px 4px rgb(47, 47, 47);
+  font-family: "Poppins";
+  margin-top: 14.6rem;
+  display: inline-block;
+  padding: 0.1% 0.3%;
+  font-size: 4rem;
+  width: 12rem; /* Ukuran lebar hexagon */
+  height: 6.9rem; /* Ukuran tinggi hexagon */
+  text-align: center;
+  align-items: center;
+  line-height: 6.9rem;
+  color: black;
+  background: white;
+  clip-path: polygon(50% 15%, 68% 30%, 68% 70%, 50% 85%, 32% 70%, 32% 30%);
+  animation: fadeInRotate 1.6s ease-in-out forwards;
+  transition: color 0.3s ease;
+}
+
+.hero .content .cta:hover {
+  background: rgb(
+    15,
+    15,
+    15
+  ); /* Membuat background menjadi transparan saat hover */
+  color: white; /* Mengubah warna teks agar tetap terlihat */
+}
+
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    color: rgb(255, 255, 255);
+  }
+  70% {
+    color: white;
+  }
+  95% {
+    color: rgb(33, 33, 33);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-270deg);
+  }
+}
+
+.hero .speedtext {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.7s ease;
+}
+.hero .speedtext--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .speedtext h5 {
+  font-weight: 600;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 40rem;
+}
+
+.hero .speedtext h6 {
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero .acceleration {
+  position: absolute;
+  z-index: 2;
+  left: 13%;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.7s ease;
+}
+
+.hero .acceleration--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .acceleration h5 {
+  font-weight: 600;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 40rem;
+}
+
+.hero .acceleration h6 {
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero .engine {
+  position: absolute;
+  z-index: 2;
+  left: 26%;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.7s ease;
+}
+
+.hero .engine--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .engine h5 {
+  font-weight: 600;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 40rem;
+}
+
+.hero .engine h6 {
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero .power {
+  position: absolute;
+  z-index: 2;
+  left: 56%;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.7s ease;
+}
+
+.hero .power--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .power h5 {
+  font-weight: 600;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 40rem;
+}
+
+.hero .power h6 {
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.hero .weg {
+  position: absolute;
+  z-index: 2;
+  left: 67%;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.7s ease;
+}
+
+.hero .weg--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero .weg h5 {
+  font-weight: 600;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 40rem;
+}
+
+.hero .weg h6 {
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.black {
+  background-color: black;
+  width: 100%;
+  height: 11px;
+}
+
+.explan {
+  min-height: 80vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.explan .img1 {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: 1.2s ease;
+  margin-top: 1%;
+  margin-left: -4%;
+  clip-path: polygon(0 18%, 100% 18%, 79% 74%, 0 74%);
+}
+
+.explan .img1--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.explan .content {
+  top: 6%;
+  position: absolute;
+  z-index: 2;
+  left: 62%;
+  margin-top: 2rem;
+  margin-right: 4%;
+}
+
+.explan .content h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 1.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.explan .content .h1--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.explan .content p {
+  text-align: justify;
+  min-width: 80%;
+  color: black;
+  margin-right: 4rem;
+  font-weight: 400;
+  font-size: 1.22rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1.2s ease;
+}
+
+.explan .content .p--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.explan h6 {
+  font-family: "Kanit";
+  color: black;
+  font-size: 3.2rem;
+  display: block;
+  margin-left: 2%;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(-12px);
+  transition: 1.2s ease;
+}
+
+.explan .h6--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.explan .img3 {
+  width: 50%;
+  height: 90%;
+  margin-left: -11rem;
+  clip-path: polygon(0 0, 97% 0, 69% 73%, 0 73%);
+
+  /* (a, b) = kanan atas dan atas kiri*/
+  /* (c, f) = kanan tengah dan tengah kiri*/
+  /* (d, e) = kanan bawah dan bawa kiri*/
+  object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: 1.2s ease;
+}
+
+.explan .img3--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.explan .img2 {
+  margin-bottom: 3rem;
+  margin-left: -5rem;
+  margin-top: 3rem;
+  width: 110%;
+  height: 110%;
+  clip-path: polygon(30% 0%, 70% 0%, 87% 50%, 70% 100%, 30% 100%, 13% 50%);
+  /* (a, b) = kanan atas dan atas kiri*/
+  /* (c, f) = kanan tengah dan tengah kiri*/
+  /* (d, e) = kanan bawah dan bawa kiri*/
+  object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 1.2s ease;
+}
+
+.explan .img2--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.soundengine {
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.soundengine h1 {
+  color: black;
+  margin-left: 4%;
+  font-size: 1.8rem;
+}
+
+.soundengine img {
+  display: flex;
+  margin-left: 42.5rem;
+  right: 60%;
+  top: 10%;
+  clip-path: polygon(37% 11%, 100% 10%, 100% 95%, 9% 95%);
+}
+
+.soundengine p {
+  margin-top: 1rem;
+  color: black;
+  margin-left: 4%;
+  max-width: 30%;
+  font-size: 1.2rem;
+}
+
+/*Audio start*/
+.audioone {
+  z-index: 99;
+  margin-top: 8%;
+  margin-left: 15rem;
+  position: absolute;
+}
+
+.audioone .box {
+  margin-top: 20rem;
+  box-sizing: border-box;
+}
+
+.visualizer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  background: #000000;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.middle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Size of the middle circle */
+  height: 400px;
+  background: #ff0000; /* Darker shade for the middle circle */
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 155px;
+  height: 155px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-play {
+  border-left: 40px solid rgb(0, 0, 0);
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  cursor: pointer;
+}
+
+.btn-play:hover {
+  border-left: 40px solid rgb(115, 115, 115);
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  cursor: pointer;
+}
+
+.btn-pause {
+  display: block;
+  border-right: 10px solid rgb(0, 0, 0);
+  border-left: 10px solid rgb(0, 0, 0);
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn-pause:hover {
+  display: block;
+  border-right: 10px solid rgb(115, 115, 115);
+  border-left: 10px solid rgb(115, 115, 115);
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.element {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 2.3px;
+  background-color: rgb(0, 0, 0);
+  transform-origin: bottom center;
+  transform: translateY(-50%);
+  transition: height 0.1s ease;
+  z-index: 0;
+}
+
+.view {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.view h1 {
+  margin-left: 4%;
+  color: black;
+  font-size: 2rem;
+}
+
+.view .content {
+  margin-left: 4%;
+  display: flex;
+  gap: 2rem;
+}
+
+.view .content p {
+  margin-top: 1rem;
+  color: black;
+  max-width: 40%;
+  text-align: justify;
+  justify-content: left;
+  font-size: 1.2rem;
+}
+
+.view .content .img1 {
+  clip-path: polygon(29% 0, 100% 0, 100% 64%, 0 64%);
+  flex: 0 0 auto;
+  height: 50%;
+}
+
+.view .img2 {
+  margin-top: -18rem;
+  clip-path: polygon(0 22%, 98% 22%, 68% 82%, 0 82%);
+}
+
+.view h2 {
+  right: 80%;
+  margin-left: 4%;
+  color: black;
+  font-size: 2rem;
+}
+
+.view .content1 {
+  margin-left: 4%;
+  display: flex;
+  gap: 2rem;
+}
+
+.view .content1 p {
+  margin-top: 1rem;
+  color: black;
+  max-width: 40%;
+  text-align: justify;
+  justify-content: left;
+  font-size: 1.2rem;
+}
+
+.view .content1 .img3 {
+  margin-top: -5rem;
+  flex: 0 0 auto;
+  height: 50%;
+  clip-path: polygon(31% 16%, 100% 16%, 100% 81%, 0 81%);
+}
+
+.specification {
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.specification .cta {
+  padding: 0.7% 3%;
+  font-size: 1.4rem;
+  transition: 0.6s ease;
+  border: 3px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.specification .cta:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.pictures {
+  display: flex;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pictures .content {
+  margin-top: -12rem;
+  margin-left: 4rem;
+  max-width: 55rem;
+}
+.pictures img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  text-shadow: 0 3px 6px black;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  width: auto;
+  padding: 20px;
+  margin: 0 -3.4rem;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 10;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.next {
+  right: 50%;
+  transform: translateX(40%);
+}
+
+.prev {
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+.prev:hover {
+  color: #c0c0c0;
+}
+.next:hover {
+  color: #c0c0c0;
+}
+
+.feature3d {
+  background-color: rgb(255, 255, 255);
+  min-height: 35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature3d .content {
+  margin-left: 4%;
+}
+
+.feature3d .content h1 {
+  margin-top: 4rem;
+  color: black;
+  font-weight: 300;
+}
+
+.view-button {
+  margin-top: 1rem;
+  font-family: "Poppins";
+  background-color: rgb(0, 0, 0); /* Warna biru */
+  color: rgb(255, 255, 255); /* Warna teks */
+  clip-path: polygon(50% 15%, 68% 30%, 68% 70%, 50% 85%, 32% 70%, 32% 30%);
+  padding: 0.6% 3%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 4rem;
+  text-align: center;
+  width: 12rem; /* Ukuran lebar hexagon */
+  height: 6.9rem; /* Ukuran tinggi hexagon */
+  transition: 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+.view-button:hover {
+  background-color: rgb(116, 116, 116);
+  color: rgb(0, 0, 0);
+}
+
+/* Gaya dasar untuk modal */
+.modal {
+  display: none; /* Modal default tersembunyi */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.845
+  ); /* Latar belakang gelap dengan transparansi */
+}
+
+/* Konten modal di tengah layar */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3f3a3a;
+  padding: 2px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal-content img {
+  /* Sesuaikan dengan tinggi layar */
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* Animasi saat diperbesar */
+}
+
+/* Gaya tombol keluar */
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+/* Gambar GIF responsif */
+.modal-content img {
+  width: 78rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.price {
+  align-items: flex-start;
+  display: flex;
+  align-items: center; /* Menjadikan konten sejajar secara vertikal */
+  justify-content: space-between; /* Memberi jarak antara gambar dan konten */
+  flex-wrap: wrap;
+  min-height: 40vh;
+  padding: 2rem; /* Memberikan jarak di sekitar elemen */
+  background: #ffffff;
+}
+
+.price img {
+  margin-left: 4%;
+  flex: 1;
+  width: 30%; /* Lebar gambar */
+  height: auto; /* Menjaga proporsi gambar */
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+
+  clip-path: polygon(9% 0, 89% 0, 89% 100%, 9% 100%);
+}
+
+.price .content {
+  flex: 1; /* Membuat konten fleksibel */
+  margin-left: 4%;
+  margin-right: 4%;
+  color: rgb(0, 0, 0);
+}
+
+.price .content h3 {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  animation: discover 1.4s ease-in-out forwards;
+}
+
+.price .content h1 {
+  font-size: 3rem;
+  color: #000000;
+}
+
+.price .content h1:hover {
+  color: black;
+}
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button.btn {
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #272727;
+  color: white;
+}
