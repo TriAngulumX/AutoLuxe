@@ -104,7 +104,7 @@ const cars = [
     capacity: 4,
     fuel_consumption: 13.8,
     type: ["Sport", "Hatchback"],
-    url: "/Car Slide/HondaCivicTypeR/index.html",
+    url: "/AutoLuxe/Car Slide/HondaCivicTypeR/index.html",
   },
 
   {
@@ -137,7 +137,7 @@ const cars = [
     capacity: 2,
     fuel_consumption: 9.6,
     type: ["Sport", "Coupe"],
-    url: "/Car Slide/Mazda RX3/index.html",
+    url: "/AutoLuxe/Car Slide/Mazda RX3/index.html",
   },
 
   {
