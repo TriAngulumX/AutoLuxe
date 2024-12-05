@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">AutoLuxe</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#solution">Solution</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="index.html" id="user" class="terra">LOGOUT</a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar End -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <div class="content">
+        <img src="IMG/dealer.jpg" width="100%" height="900" />
+        <h3>Welcome To</h3>
+        <h2>AutoLuxe.</h2>
+        <p>
+          Your premier destination for luxury cars and cutting-edge automotive
+          technology. We offer a curated collection of premium vehicles with
+          futuristic designs, outstanding performance, and advanced
+          technological features. AutoLuxe is committed to delivering an
+          unparalleled driving experience, along with professional services to
+          help you find your dream car. Explore our catalog and discover the
+          perfect vehicle for your lifestyle.
+        </p>
+      </div>
+
+      <div class="content">
+        <img src="IMG/civic.jpg" width="100%" height="900" />
+        <h1>AWAKEN YOUR SENSE TO RACE</h1>
+        <h4>Discover</h4>
+        <a href="Car Slide/HondaCivicTypeR/index.html" class="cta">></a>
+        <h6><span>>> </span>HONDA CIVIC TYPE-R</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/camry.jpg" width="100%" height="900" />
+        <h1>THE EXTRAORDINARY ELEGANCE</h1>
+        <h4>Discover</h4>
+        <a href="" class="cta">></a>
+        <h6><span>>> </span>TOYOTA CAMRY</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/pajero.jpg" width="100%" height="900" />
+        <h1>BRING YOU TO THE TOP OF EVERYTHING</h1>
+        <h4>Discover</h4>
+        <a href="" class="cta">></a>
+        <h6><span>>> </span>PAJERO SPORT</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/toyotacorolla.jpg" width="100%" height="900" />
+        <h1>FOR A LIFETIME OF GOODTIMES</h1>
+        <h4>Discover</h4>
+        <a href="" class="cta">></a>
+        <h6><span>>> </span>TOYOTA COROLLA</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/yaris.jpg" width="100%" height="900" />
+        <h1>YARIS IS HERE !</h1>
+        <h4>Discover</h4>
+        <a href="" class="cta">></a>
+        <h6><span>>> </span>TOYOTA YARIS 2024</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/raize.jpg" width="100%" height="900" />
+        <h1>LIVE OUT YOUR DREAMS. RISE YOUR REALITY</h1>
+        <h4>Discover</h4>
+        <a href="" class="cta">></a>
+        <h6><span>>> </span>Toyota Raize</h6>
+      </div>
+
+      <div class="content">
+        <img src="IMG/mazda.jpg" width="100%" height="900" />
+        <h1>FIND THE BEAUTY OF MAZDA</h1>
+        <h4>Discover</h4>
+        <a href="Car Slide/Mazda CX-3/index.html" class="cta">></a>
+        <h6><span>>> </span>MAZDA CX-3</h6>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Cars start -->
+    <section id="cars" class="cars">
+      <div class="heading">
+        <h1>CARS</h1>
+        <h2>FIND YOUR BEST CAR FOR YOUR RIDE</h2>
+      </div>
+      <div class="searchcar">
+        <div class="row">
+          <input
+            type="carsearch"
+            name=""
+            id="cari"
+            placeholder="Search Cars..."
+            onkeyup="search()"
+          />
+          <button><i data-feather="search"></i></button>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Car Type</span>
+            <div class="caret"></div>
+            <ul class="menu">
+              <li>All</li>
+              <li>Coupe</li>
+              <li>Convertible</li>
+              <li>Hatchback</li>
+              <li>MPV</li>
+              <li>Sedan</li>
+              <li>SUV</li>
+              <li>Sport</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Select Price</span>
+            <div class="caret"></div>
+            <ul class="menu">
+              <li>None</li>
+              <li>< 100Jt</li>
+              <li>100Jt - 500Jt</li>
+              <li>500Jt - 1M</li>
+              <li>1M - 5M</li>
+              <li>> 5M</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cars-container" id="cars-container">
+        <div class="box" dataname="Hatchback" dataprice="680Jt">
+          <div class="box-img">
+            <img src="CARS/img1.jpg" alt="Hatchback" />
+          </div>
+          <p>2014</p>
+          <h3>Audi <br />A3</h3>
+          <h2>Rp.680,2 Jt</h2>
+          <a href="Car Slide/Audi/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Sport, Coupe" dataprice="4M">
+          <div class="box-img">
+            <img src="CARS/i8coupe.jpg" />
+          </div>
+          <p>2014</p>
+          <h3>BMW <br />i8 Coupe</h3>
+          <h2>Rp.4,56 M</h2>
+          <a href="Car Slide/BMW I8/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Sedan, Coupe" dataprice="80Jt">
+          <div class="box-img">
+            <img src="CARS/chevroletcobalt.jpg" />
+          </div>
+          <p>2006</p>
+          <h3>Chevrolet <br />Cobalt SS</h3>
+          <h2>Rp.85 Jt</h2>
+          <a href="Car Slide/Cherolet Cobalt SS/index.html" class="btn"
+            >Discover</a
+          >
+        </div>
+
+        <div class="box" dataname="Hatchback" dataprice="189Jt">
+          <div class="box-img">
+            <img src="CARS/ayla.jpg" alt="Hatchback" />
+          </div>
+          <p>2021</p>
+          <h3>
+            Daihatsu <br />
+            Ayla
+          </h3>
+          <h2>Rp.189,0 Jt</h2>
+          <a href="Car Slide/Daihatsu Ayla/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Hatchback" dataprice="152Jt">
+          <div class="box-img">
+            <img src="CARS/briohonda.jpeg" />
+          </div>
+          <p>2024</p>
+          <h3>Honda <br />Brio Satya E (M/T)</h3>
+          <h2>Rp.182,8 Jt</h2>
+          <a href="Car Slide/Honda Brio/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Hatchback, Sport" dataprice="2M">
+          <div class="box-img">
+            <img src="CARS/hondacivic.jpg" />
+          </div>
+          <p>2018</p>
+          <h3>
+            Honda <br />
+            Civic Type-R
+          </h3>
+          <h2>Rp.1,48 M</h2>
+          <a href="Car Slide/HondaCivicTypeR/index.html" class="btn"
+            >Discover</a
+          >
+        </div>
+
+        <div class="box" dataname="Sport, Coupe" dataprice="22M">
+          <div class="box-img">
+            <img src="CARS/aventador..jpg" />
+          </div>
+          <p>2012</p>
+          <h3>Lamborghini <br />Aventador SVJ</h3>
+          <h2>Rp.22,3M</h2>
+          <a href="Car Slide/L.aventador/" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Sport, Coupe" dataprice="8M">
+          <div class="box-img">
+            <img src="CARS/huracanevo.jpg" />
+          </div>
+          <p>2012</p>
+          <h3>Lamborghini <br />Huracan EVO</h3>
+          <h2>Rp.8.56M</h2>
+          <a href="Car Slide/Huracan/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Sport, SUV" dataprice="7M">
+          <div class="box-img">
+            <img src="CARS/urus.jpg" />
+          </div>
+          <p>2012</p>
+          <h3>Lamborghini <br />Urus</h3>
+          <h2>Rp.7M</h2>
+          <a href="Car Slide/Urus/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="430Jt">
+          <div class="box-img">
+            <img src="CARS/mazdacs.jpg" />
+          </div>
+          <p>2016</p>
+          <h3>Mazda <br />CX-3</h3>
+          <h2>Rp.430 Jt</h2>
+          <a href="Car Slide/Mazda CX3/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Convertible, Sport, Coupe" dataprice="935Jt">
+          <div class="box-img">
+            <img src="CARS/2017-Mazda-MX-5-RF-007.jpg" />
+          </div>
+          <p>2017</p>
+          <h3>Mazda <br />MX-5 RF</h3>
+          <h2>Rp.935.5 Jt</h2>
+          <a href="Car Slide/Mazda RX3/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Hatchback" dataprice="2M">
+          <div class="box-img">
+            <img src="CARS/mercedes.jpg" />
+          </div>
+          <p>2021</p>
+          <h3>Mercedes-Benz<br />CLA CLASS</h3>
+          <h2>Rp.1,25 M</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Hatchback" dataprice="2M">
+          <div class="box-img">
+            <img src="CARS/mini.jpg" />
+          </div>
+          <p>2018</p>
+          <h3>
+            Mini <br />
+            Cooper
+          </h3>
+          <h2>Rp.1,03 M</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="192Jt">
+          <div class="box-img">
+            <img src="CARS/nissanjuke.jpg" />
+          </div>
+          <p>2021</p>
+          <h3>
+            Nissan <br />
+            Juke
+          </h3>
+          <h2>Rp.192 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="769Jt">
+          <div class="box-img">
+            <img src="CARS/nissanterra.jpg" />
+          </div>
+          <p>2024</p>
+          <h3>
+            Nissan <br />
+            Terra
+          </h3>
+          <h2>Rp.769,8 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="306Jt">
+          <div class="box-img">
+            <img src="CARS/nissan-xtrail.jpg" />
+          </div>
+          <p>2024</p>
+          <h3>
+            Nissan <br />
+            X-Trail
+          </h3>
+          <h2>Rp.306 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="MPV" dataprice="298Jt">
+          <div class="box-img">
+            <img src="CARS/avanza.jpg" />
+          </div>
+          <p>2022</p>
+          <h3>
+            Toyota <br />
+            Avanza
+          </h3>
+          <h2>Rp.298,4 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="MPV" dataprice="2M">
+          <div class="box-img">
+            <img src="CARS/Alphard.jpg" />
+          </div>
+          <p>2022</p>
+          <h3>
+            Toyota <br />
+            Alphard
+          </h3>
+          <h2>Rp.1.47 M</h2>
+          <a href="Car Slide/Toyota Alphard/index.html" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV, Sport" dataprice="3M">
+          <div class="box-img">
+            <img src="CARS/legender.jpg" />
+          </div>
+          <p>2018</p>
+          <h3>Toyota<br />Fortuner Legender</h3>
+          <h2>Rp.3,05 M</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="Sedan" dataprice="887Jt">
+          <div class="box-img">
+            <img src="CARS/camry.jpg" />
+          </div>
+          <p>2024</p>
+          <h3>
+            Toyota<br />
+            Camry
+          </h3>
+          <h2>Rp.887 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="650Jt">
+          <div class="box-img">
+            <img src="CARS/Highlander.jpg" />
+          </div>
+          <p>2024</p>
+          <h3>Toyota<br />Highlander</h3>
+          <h2>Rp.650 Jt</h2>
+          <a href="/Car Slide/Toyota Highlander/index.html" class="btn"
+            >Discover</a
+          >
+        </div>
+
+        <div class="box" dataname="SUV" dataprice="278Jt">
+          <div class="box-img">
+            <img src="CARS/raize.jpg" />
+          </div>
+          <p>2023</p>
+          <h3>Toyota <br />Raize</h3>
+          <h2>Rp.278 Jt</h2>
+          <a href="#" class="btn">Discover</a>
+        </div>
+      </div>
+
+      <h6>CARS BY BRAND</h6>
+      <div class="choice">
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/BMW-Logo.png" width="100%" />
+            <a href="Car Slide/BMW I8/index.html" class="cta">BMW</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Audi-Logo.png" width="100%" />
+            <a href="Car Slide/Audi/index.html" class="cta">Audi</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/chevrolet.png" width="100%" />
+            <a href="Car Slide/Cherolet Cobalt SS/index.html" class="cta"
+              >Chevrolet</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Honda-Logo.png" width="100%" />
+            <a href="Brand (Car)/Honda/index.html" class="cta">Honda</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Lamborghini-Logo.png" width="100%" />
+            <a href="Brand (Car)/LamborghiniDis/index.html" class="cta"
+              >Lamborghini</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Nissanlogo.png" width="100%" />
+            <a href="#" class="cta">Nissan</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/mercedes.png" width="100%" />
+            <a href="#" class="cta">Mercedes-Benz</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Minilogo.png" width="100%" />
+            <a href="#" class="cta">Mini</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/mitsubishilogo.png" width="100%" />
+            <a href="#" class="cta">Mitsubishi</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Toyota_Canada_Inc.-Logo.png" width="100%" />
+            <a href="#" class="cta">Toyota</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/mazda.png" width="100%" />
+            <a href="Brand (Car)/Mazda/index.html" class="cta">Mazda</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="Brand Logo/Daihatsu_logo_PNG1.png" width="100%" />
+            <a href="Car Slide/Daihatsu Ayla/index.html" class="cta"
+              >Daihatsu</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cars end -->
+
+    <!-- Solution start -->
+    <section id="solution" class="solution">
+      <h1>Still confused about your dream car?</h1>
+      <img src="IMG/bmw.jpg" alt="Car Image" class="background-image" />
+      <a
+        class="enter-btn"
+        href="/Weighted Product/Weighted Product First Slide/explanation.html"
+      >
+        Discover
+      </a>
+    </section>
+    <!--Solution End-->
+
+    <!--About start-->
+    <section id="about" class="about">
+      <h2>About</h2>
+      <h1>AutoLuxe</h1>
+      <p>
+        AutoLuxe is the ultimate destination for luxury car lovers who crave
+        premium quality and cutting-edge technology. We present a collection of
+        modern vehicles designed to provide an exceptional, comfortable and safe
+        driving experience. With a commitment to quality and style, AutoLuxe
+        provides the best selection of cars that meet high standards of luxury
+        and performance. Join us and find your dream car that is ready to
+        elevate your lifestyle to the next level.
+      </p>
+      <video
+        src="Video666.mp4"
+        id="myVideo"
+        width="90%"
+        height="20%"
+        controls
+      ></video>
+    </section>
+    <!--About end-->
+
+    <!-- Credit Section start-->
+    <section class="credit">
+      <a href="#home">AutoLuxe</a>
+      <h2>Medan, North Sumatera, Indonesia <br />2024</h2>
+      <h1>Discover More</h1>
+      <div class="row">
+        <a href="#" id="instagram"><i data-feather="instagram"></i></a>
+        <a href="#" id="youtube"><i data-feather="youtube"></i></a>
+        <a href="#" id="twitter"><i data-feather="twitter"></i></a>
+      </div>
+    </section>
+    <!-- Credit Section end-->
+
+    <!-- Feather Icons -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("content");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

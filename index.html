@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - AutoLuxe</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Quicksand", sans-serif;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(IMG/dark.jpg);
+        background-size: cover;
+        margin: 0;
+      }
+
+      .login-container {
+        background-color: #1f1f1f95;
+        padding: 2rem;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Orbitron";
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        color: #fafafa;
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      input {
+        border-style: none;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 80%;
+        color: white;
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+      }
+
+      .password-wrapper {
+        position: relative;
+      }
+
+      input[type="password"],
+      input[type="text"] {
+        width: 80%;
+        color: white;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        transition: border-color 0.2s ease-in-out;
+      }
+
+      input[type="password"]:focus,
+      input[type="text"]:focus {
+        outline: none;
+      }
+
+      .show-password-btn {
+        margin-top: 1rem;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        color: #007bff;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.6s ease;
+      }
+
+      .show-password-btn:hover {
+        text-decoration: underline;
+        color: white;
+      }
+      .btn {
+        margin-top: 3rem;
+        width: 90%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #040404;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: 0.6s ease;
+      }
+
+      .btn:hover {
+        background-color: #ffffff;
+        color: black;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        color: #666666;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>AutoLuxe</h1>
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="login(); return false;">
+        <div class="form-group">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button
+            type="button"
+            id="toggleLoginPassword"
+            onclick="togglePassword('loginPassword', 'toggleLoginPassword')"
+            class="show-password-btn"
+          >
+            Show
+          </button>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+      </form>
+    </div>
+
+    <script>
+      // Login function
+      function login() {
+        const email = document.getElementById("loginEmail").value.trim();
+        const password = document.getElementById("loginPassword").value;
+
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const user = users.find(
+          (user) => user.email === email && user.password === password
+        );
+
+        if (user) {
+          alert(`Welcome, ${user.username}! Login successful.`);
+          window.location.href = "dashboard.html"; // Redirect to dashboard
+        } else {
+          alert("Invalid email or password. Please try again.");
+        }
+      }
+
+      // Toggle password visibility
+      function togglePassword(fieldId, toggleId) {
+        const passwordField = document.getElementById(fieldId);
+        const toggleButton = document.getElementById(toggleId);
+
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+          toggleButton.textContent = "Hide";
+        } else {
+          passwordField.type = "password";
+          toggleButton.textContent = "Show";
+        }
+      }
+    </script>
+  </body>
+</html>
