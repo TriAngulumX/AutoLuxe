@@ -126,7 +126,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 7.53,
     type: ["Sport", "Coupe"],
-    url: "/Car Slide/Huracan/index.html",
+    url: "/AutoLuxe/Car Slide/Huracan/index.html",
   },
 
   {
