@@ -191,20 +191,26 @@
 
     <script>
       // Login function
-      function login() {
+     function login() {
         const email = document.getElementById("loginEmail").value.trim();
         const password = document.getElementById("loginPassword").value;
 
         const users = JSON.parse(localStorage.getItem("users")) || [];
-        const user = users.find(
-          (user) => user.email === email && user.password === password
-        );
+        const user = users.find((user) => user.email === email);
 
-        if (user) {
+        if (!user) {
+          // Jika email tidak ditemukan
+          alert("This email is not registered. Please sign up first.");
+          return;
+        }
+
+        if (user.password === password) {
+          // Jika email ditemukan dan password cocok
           alert(`Welcome, ${user.username}! Login successful.`);
           window.location.href = "dashboard.html"; // Redirect to dashboard
         } else {
-          alert("Invalid email or password. Please try again.");
+          // Jika email ditemukan tapi password salah
+          alert("Incorrect password. Please try again.");
         }
       }
 
