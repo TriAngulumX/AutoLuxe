@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - Mazda CX-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/AutoLuxe/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </div>
+
+    <section class="hero">
+      <img src="img1.jpg" width="100%" height="100%" />
+      <div class="content">
+        <h4>MAZDA</h4>
+        <h3>CX-3</h3>
+        <a href="#explan" id="button1" class="cta"><span>></span></a>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <img src="img2.jpg" width="30%" height="30%" class="img1" />
+      <div class="content">
+        <h3>Overview</h3>
+        <p>
+          The Mazda CX-3 is a compact SUV that offers a blend of elegant design,
+          powerful performance and modern features. With its compact dimensions,
+          the CX-3 is perfect for maneuvering in urban areas. Its distinctive
+          Mazda exterior design gives it a premium and sporty feel. Inside the
+          cabin, the CX-3 presents a comfortable and driver-oriented interior.
+          Equipped with the efficient Skyactiv engine, the CX-3 provides a
+          pleasant driving experience. In addition, the CX-3 is also equipped
+          with various advanced safety features to provide maximum protection
+          for drivers and passengers.
+        </p>
+      </div>
+    </section>
+
+    <section class="panels">
+      <div class="panel-sm">
+        <div class="panel">
+          <div>
+            <h2>Elegant Interior</h2>
+          </div>
+        </div>
+
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel">
+          <div>
+            <h2>Drive Without Compromise</h2>
+          </div>
+        </div>
+      </div>
+      <div class="panel-lg"></div>
+    </section>
+
+    <section class="cx">
+      <video
+        src="CX3Video.mp4"
+        width="45%"
+        height="45%"
+        autoplay
+        muted
+        class="vid1"
+      ></video>
+    </section>
+
+    <section class="spec" id="spec">
+      <div>
+        <div class="spec-header">
+          <h2>Technical Specification</h2>
+        </div>
+        <ul>
+          <li>
+            <span>Engine Type</span> <br />
+            <span>SKYACTIV-G 2.0L, 4-Cylinder, DOHC</span>
+          </li>
+          <li><span>Max. Power</span> <br />148 hp</li>
+          <li>
+            <span>Max. Speed</span>
+            <br />
+            <span>190 Km/h</span>
+          </li>
+          <li>
+            <span>Control Stability</span> <br />
+            Dynamic Stability Control & raction Control System
+          </li>
+          <li>
+            <span>Rear Cross Traffic Alert (RCTA)</span>
+            <br />
+            <span> Available</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="spec2" id="spec2">
+      <a href="Specification/index.html" class="cta"
+        >SEE ALL TECHINCAL SPECIFICATION</a
+      >
+    </section>
+
+    <section class="price" id="price">
+      <img src="img5.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP.430 Jt</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Car</label>
+          <input
+            type="text"
+            id="car"
+            name="car"
+            value="Mazda CX-3"
+            readonly
+            required
+          />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+
+    <script>
+      const bttn = document.getElementById("button");
+      document
+        .getElementById("email-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          bttn.value = "Sending....";
+          const serviceid = "service_45bmfx9";
+          const templateid = "template_wloxvp9";
+
+          emailjs.sendForm(serviceid, templateid, this).then(
+            () => {
+              bttn.value = "Send Email";
+              alert("Email Sent.");
+            },
+            (err) => {
+              bttn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
