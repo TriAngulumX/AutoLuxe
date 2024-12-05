@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - Lamborghini Urus</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/AutoLuxe/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </div>
+
+    <section class="hero" id="hero">
+      <img src="img4.jpg" width="100%" height="100%" />
+      <div class="content">
+        <h4>LAMBORGHINI</h4>
+        <h3>URUS SE</h3>
+        <a href="#explan" class="cta"><span>></span></a>
+      </div>
+      <div class="speedtext">
+        <h5>MAX SPEED</h5>
+        <h6>312km/h</h6>
+      </div>
+      <div class="acceleration">
+        <h5>0-100km/h</h5>
+        <h6>3.4s</h6>
+      </div>
+      <div class="engine">
+        <h5>V-8 ENGINE</h5>
+        <h6>4.0 L Twin Turbo</h6>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <img src="urus2.jpg" width="60%" height="60%" class="img1" />
+      <div class="content">
+        <h1>URUS SE</h1>
+        <p>
+          Urus SE is the next step in Automobili Lamborghini’s journey toward
+          complete hybridization. As the first PHEV (Plug-in Hybrid Electric
+          Vehicle) version of the luxury Super SUV, the SE sets a new benchmark
+          for the whole segment in terms of comfort, performance, efficiency,
+          emissions, and driving experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="soundengine" id="soundengine">
+      <h1>SOUND ENGINE</h1>
+      <p>
+        Feel the engine of Huracán EVO. Get ready to experience unprecedented
+        driving emotions.
+      </p>
+      <img src="urus3.jpg" alt="" />
+      <div class="audioone">
+        <audio src="soundurus.mp3"></audio>
+        <div class="box">
+          <div class="visualizer"></div>
+          <div class="center-circle"></div>
+        </div>
+        <div class="play">
+          <div class="btn btn-play"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--View start-->
+    <section class="view" id="view">
+      <h1>INTERIOR</h1>
+      <div class="content">
+        <p>
+          The interior of the Lamborghini Urus SE is the pinnacle of modern
+          luxury designed to provide uncompromising comfort and style. The cabin
+          is adorned with the finest materials, such as high-quality Alcantara
+          leather and subtle carbon fiber accents, creating an elegant and
+          futuristic atmosphere. The ergonomic center console is equipped with
+          state-of-the-art technology, including an intuitive dual touchscreen
+          and a cutting-edge infotainment system. Every detail, from the precise
+          seat stitching pattern to the customizable ambient lighting, reflects
+          Lamborghini's signature design perfection. With ample space and
+          specially designed seats for maximum comfort.
+        </p>
+        <img src="interior.jpg" class="img1" width="50%" height="50%" />
+      </div>
+      <img src="interior2.jpg" width="100%" height="50%" class="img2" />
+      <div class="content1">
+        <h1>EXTERIOR</h1>
+        <p>
+          The Lamborghini Urus SE features a stunning exterior with a perfect
+          blend of luxury and aggressiveness. Its athletic and aerodynamic
+          silhouette is accentuated by sharp lines and contemporary details,
+          reflecting Lamborghini's iconic design heritage. The signature
+          Y-design LED headlights, combined with the large, dominant grille,
+          give it a bold yet elegant character. Premium paint finishes and
+          carbon fiber accents on the body add to the aura of exclusivity, while
+          large, precision-designed alloy wheels emphasize the Urus SE's
+          dominance on the road. A design masterpiece that combines modern
+          technology with a luxurious aesthetic like no other.
+        </p>
+        <img src="urus4.jpg" class="img3" />
+      </div>
+    </section>
+    <!--View end-->
+
+    <section class="feature3d" id="feature3d">
+      <div class="content">
+        <h1>Discover Exterior 3D View</h1>
+        <button class="view-button" onclick="openGifModal()">></button>
+      </div>
+    </section>
+
+    <div id="gifModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeGifModal()">&times;</span>
+        <img src="urus3dview.gif" alt="Huracan 3D View" width="100%" />
+      </div>
+    </div>
+
+    <section class="spec" id="spec">
+      <a href="specifi/spec.html" class="cta"
+        >SEE ALL TECHNICAL SPECIFICATION</a
+      >
+    </section>
+
+    <section class="price" id="price">
+      <img src="urus.jpeg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP. 7M</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Car</label>
+          <input
+            type="text"
+            id="car"
+            name="car"
+            value="Lamborghini Urus SE"
+            readonly
+            required
+          />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="pictures">
+      <div class="content">
+        <img src="urus3.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="urus.jpeg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="urus2.jpg " width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="interior.jpg" width="100%" height="100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <script>
+      /// prev and next start
+      let slideIndex = 0; // Indeks slide awal
+
+      // Fungsi untuk menampilkan slide berdasarkan indeks
+      function showSlides(n) {
+        let slides = document.querySelectorAll(".pictures .content img");
+
+        // Reset indeks jika melebihi jumlah slide
+        if (n >= slides.length) {
+          slideIndex = 0;
+        } else if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+
+        // Sembunyikan semua gambar
+        slides.forEach((slide) => {
+          slide.style.display = "none";
+        });
+
+        // Tampilkan slide yang sesuai
+        slides[slideIndex].style.display = "block";
+      }
+
+      // Fungsi untuk mengubah indeks slide
+      function plusSlides(n) {
+        slideIndex += n;
+        showSlides(slideIndex);
+      }
+
+      // Tampilkan slide pertama saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlides(slideIndex);
+      });
+
+      //prev and next end //////
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
