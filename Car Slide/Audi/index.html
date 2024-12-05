@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - Audi A3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </div>
+
+    <section class="hero" id="hero">
+      <img src="img1.jpg" width="100%" height="100%" />
+      <div class="content">
+        <h4>AUDI</h4>
+        <h3>A3 S-LINE</h3>
+        <a href="#explan" id="button1" class="cta"><span>></span></a>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <img src="img2.jpg" class="img1" width="30%" height="30%" />
+      <div class="content">
+        <h3>Overview</h3>
+        <p>
+          The Audi A3 S line is one of the flagship variants of the Audi A3
+          designed to deliver sporty performance and elegant looks. Audi A3 S
+          line offers impressive performance with optimal fuel efficiency.
+          Advanced technologies such as the MMI touch infotainment system, full
+          connectivity, and advanced driver assistants make it the perfect
+          choice for those seeking comfort, performance, and technology in one
+          package.
+        </p>
+      </div>
+    </section>
+
+    <section class="panels">
+      <div class="panel-sm">
+        <div class="panel">
+          <div>
+            <h2>Elegant Interior</h2>
+          </div>
+        </div>
+
+        <div class="panel"></div>
+        <div class="panel"></div>
+        <div class="panel">
+          <div>
+            <h2>Typical S-Line Exterior</h2>
+          </div>
+        </div>
+      </div>
+      <div class="panel-lg"></div>
+    </section>
+
+    <section class="spec" id="spec">
+      <div>
+        <div class="spec-header">
+          <h2>Technical Specification</h2>
+        </div>
+        <ul>
+          <li>
+            <span>Engine Type</span> <br />
+            <span>4-Cylinder Turbocharged (TSFI or TD)</span>
+          </li>
+          <li>
+            <span>Capacity</span>
+            <br />
+            <span>1.5L</span>
+          </li>
+          <li>
+            <span>Max. Power</span>
+            <br />
+            <span>150 hp - 190 hp</span>
+          </li>
+          <li>
+            <span>Max. Torque</span>
+            <br />
+            <span>250 Nm - 320 Nm</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="spec2" id="spce2">
+      <a href="specification/spec.html" class="cta"
+        >SEE ALL TECHNICAL SPECIFICATION</a
+      >
+    </section>
+
+    <section class="price" id="price">
+      <img src="img1.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP.680000000</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="" name="phone" required />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="pictures" id="pictures">
+      <div class="content">
+        <img src="img3.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img2.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img5.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img4.jpg" width="100%" height="100%" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+    <script>
+      /// prev and next start
+      let slideIndex = 0; // Indeks slide awal
+
+      // Fungsi untuk menampilkan slide berdasarkan indeks
+      function showSlides(n) {
+        let slides = document.querySelectorAll(".pictures .content img");
+
+        // Reset indeks jika melebihi jumlah slide
+        if (n >= slides.length) {
+          slideIndex = 0;
+        } else if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+
+        // Sembunyikan semua gambar
+        slides.forEach((slide) => {
+          slide.style.display = "none";
+        });
+
+        // Tampilkan slide yang sesuai
+        slides[slideIndex].style.display = "block";
+      }
+
+      // Fungsi untuk mengubah indeks slide
+      function plusSlides(n) {
+        slideIndex += n;
+        showSlides(slideIndex);
+      }
+
+      // Tampilkan slide pertama saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlides(slideIndex);
+      });
+
+      const bttn = document.getElementById("button");
+
+      document
+        .getElementById("email-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          bttn.value = "Sending....";
+          const serviceid = "service_45bmfx9";
+          const templateid = "template_wloxvp9";
+
+          emailjs.sendForm(serviceid, templateid, this).then(
+            () => {
+              bttn.value = "Send Email";
+              alert("Email Sent.");
+            },
+            (err) => {
+              bttn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+      //prev and next end //////
+    </script>
+  </body>
+</html>
