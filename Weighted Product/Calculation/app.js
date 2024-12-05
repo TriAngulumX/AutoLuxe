@@ -9,7 +9,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 7.8,
     type: ["SUV", "Sport"],
-    url: "/Car Slide/Urus/index.html",
+    url: "/AutoLuxe/Car Slide/Urus/index.html",
   },
 
   {
@@ -20,7 +20,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 13,
     type: "SUV",
-    url: "/Car Slide/Mazda CX3/index.html",
+    url: "/AutoLuxe/Car Slide/Mazda CX3/index.html",
   },
 
   {
@@ -71,7 +71,7 @@ const cars = [
     capacity: 7,
     fuel_consumption: 15.1,
     type: "SUV",
-    url: "/Car Slide/Toyota Highlander/index.html",
+    url: "/AutoLuxe/Car Slide/Toyota Highlander/index.html",
   },
 
   {
@@ -93,7 +93,7 @@ const cars = [
     capacity: 4,
     fuel_consumption: 14.45,
     type: ["Sport", "Coupe"],
-    url: "/Car Slide/BMW I8/index.html",
+    url: "/AutoLuxe/Car Slide/BMW I8/index.html",
   },
 
   {
@@ -115,7 +115,7 @@ const cars = [
     capacity: 2,
     fuel_consumption: 4.25,
     type: ["Sport", "Coupe"],
-    url: "/Car Slide/L.aventador/index.html",
+    url: "/AutoLuxe/Car Slide/L.aventador/index.html",
   },
 
   {
@@ -159,7 +159,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 7.8,
     type: ["Sedan", "Coupe"],
-    url: "/Car Slide/Cherolet Cobalt SS/index.html",
+    url: "/AutoLuxe/Car Slide/Cherolet Cobalt SS/index.html",
   },
 
   {
@@ -191,7 +191,7 @@ const cars = [
     capacity: 7,
     fuel_consumption: 8,
     type: "MPV",
-    url: "/Car Slide/Toyota Alphard/index.html",
+    url: "/AutoLuxe/Car Slide/Toyota Alphard/index.html",
   },
 
   ///Hatchback Cars///
@@ -203,7 +203,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 12.5,
     type: "Hatchback",
-    url: "/Car Slide/Audi/index.html",
+    url: "/AutoLuxe/Car Slide/Audi/index.html",
   },
 
   {
@@ -214,7 +214,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 16.7,
     type: "Hatchback",
-    url: "/Car Slide/Daihatsu Ayla/index.html",
+    url: "/AutoLuxe/Car Slide/Daihatsu Ayla/index.html",
   },
 
   {
@@ -225,7 +225,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 15,
     type: "Hatchback",
-    url: "/Car Slide/Honda Brio/index.html",
+    url: "/AutoLuxe/Car Slide/Honda Brio/index.html",
   },
   {
     id: 24,
