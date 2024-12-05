@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - Alya 2021</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="AutoLuxe/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </div>
+
+    <section class="hero" id="hero">
+      <img src="Asset/img1.jpg" width="100%" height="100%" />
+      <div class="content">
+        <h4>DAIHATSU</h4>
+        <h3>AYLA 2021</h3>
+        <a href="#explan" id="button1" class="cta"><span>></span></a>
+      </div>
+      <div class="speedtext">
+        <h5>TOP SPEED</h5>
+        <h6>>140km/h</h6>
+      </div>
+
+      <div class="engine">
+        <h5>ENGINE</h5>
+        <h6>1KR-DE, 3-Cylinder Inline, DOHC 1.0L</h6>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <img src="Asset/pic2.jpg" class="img1" width="50%" height="50%" />
+
+      <div class="content">
+        <h3>Overview</h3>
+        <p>
+          Daihatsu Ayla 2021 is a city car in the Low Cost Green Car (LCGC)
+          segment. This car is designed to offer fuel efficiency, ease of
+          driving in urban areas, and an affordable price.
+        </p>
+      </div>
+    </section>
+
+    <div class="interior">
+      <h1>Interior</h1>
+      <img src="Asset/interior.png" />
+    </div>
+
+    <section class="spec2" id="spec2">
+      <a href="specfolder/spec.html" class="cta"
+        >SEE ALL TECHNICAL SPECIFICATION</a
+      >
+    </section>
+
+    <section class="price" id="price">
+      <img src="Asset/pic3.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP.680000000</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="" name="phone" required />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
