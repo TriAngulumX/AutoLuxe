@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLuxe - Highlander</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/AutoLuxe/dashboard.html" class="navbar-logo">AutoLuxe</a>
+    </nav>
+
+    <section class="hero" id="hero">
+      <img src="img2.jpg" width="100%" height="100%" />
+      <div class="content">
+        <h4>TOYOTA</h4>
+        <h3>HIGHLANDER</h3>
+        <a href="#explan" id="button1" class="cta"><span>></span></a>
+      </div>
+    </section>
+
+    <section class="explan" id="explan">
+      <img src="img3.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>Overview</h3>
+        <p>
+          Toyota Highlander is a mid-sized family SUV that combines comfort,
+          performance and efficiency in one complete package. With a modern and
+          aerodynamic exterior design, the Highlander looks elegant but remains
+          tough. Powered by a powerful but fuel-efficient petrol or hybrid
+          engine, this car offers a choice of Front-Wheel Drive (FWD) or
+          All-Wheel Drive (AWD) to support performance in various road
+          conditions. The interior is designed for maximum comfort with a
+          capacity of up to 7-8 passengers, equipped with premium materials,
+          advanced technology features such as a large touch screen with Apple
+          CarPlay and Android Auto connectivity, as well as various advanced
+          Toyota Safety Sense security systems. Highlander is the ideal choice
+          for families looking for an SUV that is reliable, comfortable and
+          equipped with the latest technology.
+        </p>
+      </div>
+    </section>
+
+    <section class="spec" id="spec">
+      <div>
+        <div class="spec-header">
+          <h2>Technical Specification</h2>
+        </div>
+        <ul>
+          <li>
+            <span>Engine Type</span> <br />
+            <span> 2.4L Turbocharged 4-cylinder</span>
+          </li>
+          <li><span>Max. Power</span> <br />265 HP @ 6.000 rpm</li>
+          <li>
+            <span>Max. Speed</span>
+            <br />
+            <span>180–190 Km/h</span>
+          </li>
+          <li>
+            <span>Toyota Safety Sense</span> <br />Lane Departure Alert <br />
+          </li>
+          <li>
+            <span>Exterior features</span>
+            <br />
+            <span> Power Liftgate (Hands-Free for top variants)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <img src="img4.jpg" width="30%" height="30%" />
+      <div class="content">
+        <h3>PRICE</h3>
+        <h1>RP. 660 Jt</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT DEALER</h2>
+      <form id="email-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Phone</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Car</label>
+          <input
+            type="text"
+            id="car"
+            name="car"
+            value="Toyota Highlander"
+            readonly
+            required
+          />
+        </div>
+
+        <button type="submit" id="button" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EI3q8YKWtZz0nsBwg",
+        });
+      })();
+    </script>
+    <script>
+      const bttn = document.getElementById("button");
+      document
+        .getElementById("email-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          bttn.value = "Sending....";
+          const serviceid = "service_45bmfx9";
+          const templateid = "template_wloxvp9";
+
+          emailjs.sendForm(serviceid, templateid, this).then(
+            () => {
+              bttn.value = "Send Email";
+              alert("Email Sent.");
+            },
+            (err) => {
+              bttn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
