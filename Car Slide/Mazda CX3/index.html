@@ -167,6 +167,65 @@
       </form>
     </section>
 
+<section class="pictures" id="pictures">
+      <div class="content">
+        <img src="img7.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img3.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img1.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img6.jpg" width="100%" height="100%" />
+      </div>
+      <div class="content">
+        <img src="img5.jpg" width="100%" height="100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+     <script>
+      /// prev and next start
+      let slideIndex = 0; // Indeks slide awal
+
+      // Fungsi untuk menampilkan slide berdasarkan indeks
+      function showSlides(n) {
+        let slides = document.querySelectorAll(".pictures .content img");
+
+        // Reset indeks jika melebihi jumlah slide
+        if (n >= slides.length) {
+          slideIndex = 0;
+        } else if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+
+        // Sembunyikan semua gambar
+        slides.forEach((slide) => {
+          slide.style.display = "none";
+        });
+
+        // Tampilkan slide yang sesuai
+        slides[slideIndex].style.display = "block";
+      }
+
+      // Fungsi untuk mengubah indeks slide
+      function plusSlides(n) {
+        slideIndex += n;
+        showSlides(slideIndex);
+      }
+
+      // Tampilkan slide pertama saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlides(slideIndex);
+      });
+
+      //prev and next end //////
+    </script>
+    
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
