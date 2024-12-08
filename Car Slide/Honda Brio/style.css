@@ -395,7 +395,7 @@ button.btn:hover {
 .price img {
   margin-left: 4%;
   flex: 1;
-  width: 30%; /* Lebar gambar */
+  width: 35%; /* Lebar gambar */
   height: auto; /* Menjaga proporsi gambar */
   object-fit: cover; /* Agar gambar tidak terdistorsi */
 
