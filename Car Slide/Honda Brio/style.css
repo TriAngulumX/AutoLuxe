@@ -398,8 +398,6 @@ button.btn:hover {
   width: 35%; /* Lebar gambar */
   height: auto; /* Menjaga proporsi gambar */
   object-fit: cover; /* Agar gambar tidak terdistorsi */
-
-  clip-path: polygon(9% 0, 89% 0, 89% 100%, 9% 100%);
 }
 
 .price .content {
