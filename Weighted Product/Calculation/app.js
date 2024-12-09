@@ -72,6 +72,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 15.2,
     type: "SUV",
+    url: "/AutoLuxe/Car Slide/Toyota Raize/index.html",
   },
 
   ////Sport car
@@ -138,6 +139,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 9.6,
     type: ["Hatchback"],
+    url: "/AutoLuxe/Car Slide/mercedes/index.html",
   },
 
   ///Sedan Car ///
