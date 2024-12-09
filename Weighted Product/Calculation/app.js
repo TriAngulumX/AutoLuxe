@@ -54,16 +54,6 @@ const cars = [
   },
 
   {
-    id: 7,
-    name: "Toyota Fortuner Legender",
-    price: 3050000000,
-    year: 2018,
-    capacity: 7,
-    fuel_consumption: 14.3,
-    type: ["SUV", "Sport"],
-  },
-
-  {
     id: 8,
     name: "Toyota Highlander",
     price: 650000000,
