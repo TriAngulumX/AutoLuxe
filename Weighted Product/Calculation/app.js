@@ -160,6 +160,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 24,
     type: "Sedan",
+    url:"/AutoLuxe/Car Slide/Toyota Camry/index.html",
   },
 
   ///MPV Cars///
