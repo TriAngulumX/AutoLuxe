@@ -41,6 +41,7 @@ const cars = [
     capacity: 7,
     fuel_consumption: 15,
     type: "SUV",
+    url: "/AutoLuxe/Car Slide/Nissan Terra/index.html",
   },
 
   {
@@ -221,15 +222,7 @@ const cars = [
     type: "Hatchback",
     url: "/AutoLuxe/Car Slide/Honda Brio/index.html",
   },
-  {
-    id: 24,
-    name: "Mini Cooper",
-    price: 1030000000,
-    year: 2018,
-    capacity: 4,
-    fuel_consumption: 16.7,
-    type: "Hatchback",
-  },
+
 ];
 
 const selectedCarType = localStorage.getItem("selectedCarType");
