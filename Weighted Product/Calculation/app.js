@@ -171,6 +171,7 @@ const cars = [
     capacity: 7,
     fuel_consumption: 13.5,
     type: "MPV",
+    url: "/AutoLuxe/Car Slide/Toyota Avanza/index.html",
   },
 
   {
