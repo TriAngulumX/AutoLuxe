@@ -31,6 +31,7 @@ const cars = [
     capacity: 5,
     fuel_consumption: 20,
     type: "SUV",
+    url: "/AutoLuxe/Car Slide/Nissan Juke/index.html",
   },
 
   {
@@ -44,15 +45,6 @@ const cars = [
     url: "/AutoLuxe/Car Slide/Nissan Terra/index.html",
   },
 
-  {
-    id: 6,
-    name: "Nissan X-Trail",
-    price: 306000000,
-    year: 2021,
-    capacity: 7,
-    fuel_consumption: 9.8,
-    type: "SUV",
-  },
 
   {
     id: 8,
