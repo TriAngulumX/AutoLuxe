@@ -13,6 +13,5 @@ The criteria that have been determined are:
 There is a status on each criterion, namely “Cost” and “Benefit” in decision making. If there is one criterion that uses the Cost status, then the smaller the weight given, the more favorable it will be for the user and this status focuses on reducing expenses. This Cost status is the opposite of Benefit, which if the weight given is greater, it will benefit the user in the decision system and focus on increasing benefits.
 
 
-Direct link: https://zensporm.github.io/AutoLuxe/
-
+Direct link: https://triangulumx.github.io/AutoLuxe/
 
