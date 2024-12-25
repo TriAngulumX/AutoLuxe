@@ -15,4 +15,4 @@ There is a status on each criterion, namely “Cost” and “Benefit” in deci
 
 Direct link: https://zensporm.github.io/AutoLuxe/
 
-Translated with DeepL.com (free version)
+
