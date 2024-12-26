@@ -2,6 +2,8 @@
 
 Created By Johnstri
 
+![Johnstri](https://github.com/user-attachments/assets/eba6319e-d3b9-43f9-92c1-2ded633f627a)
+
 This is the AutoLuxe website which is a car sales website with the application of the Weighted Product method to determine the car that matches the value that has been inputted by the user on each predetermined criterion.
 The criteria that have been determined are:
 1. Car Type (Benefit)
