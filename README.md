@@ -3,7 +3,6 @@
 Created By Johnstri Aprilian
 
 Published date  : 17th December 2024
-Last Update     : 27th December 2024    
 
 ![Johnstri](https://github.com/user-attachments/assets/eba6319e-d3b9-43f9-92c1-2ded633f627a)
 
